@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cafeteira</string>
+    <string name="pedir">Pedido</string>
+    <string name="resultado">Seu café está pronto</string>
+
+    <string name="curto">Ristretto</string>
+    <string name="medio">Médio</string>
+    <string name="longo">Água Suja</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+
+    <color name="fundo">#555555</color>
+    <color name="fundoComponente">#777777</color>
+    <color name="frenteComponente">#aaaaaa</color>
+    <color name="botaoDesabilitado">#777777</color>
+    <color name="botaoHabilitado">#AAAAAA</color>
+</resources>

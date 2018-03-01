@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context="br.com.metrocamp.example.sergio.cafeteira.Cafeteira">
+
+    <Switch
+        android:id="@+id/chaveLigar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:thumbTint="@color/frenteComponente"
+        android:trackTint="@color/fundoComponente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lightImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="light"
+        app:layout_constraintBottom_toBottomOf="@+id/chaveLigar"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chaveLigar"
+        app:srcCompat="@drawable/off" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/buttonGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnCurto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/botaoDesabilitado"
+        app:layout_constraintEnd_toStartOf="@+id/btnMedio"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonGuideLine"
+        app:srcCompat="@drawable/curto" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnMedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/botaoDesabilitado"
+        app:layout_constraintEnd_toStartOf="@+id/btnLongo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCurto"
+        app:layout_constraintTop_toTopOf="@+id/buttonGuideLine"
+        app:srcCompat="@drawable/medio" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnLongo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/botaoDesabilitado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMedio"
+        app:layout_constraintTop_toTopOf="@+id/buttonGuideLine"
+        app:srcCompat="@drawable/longo" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <Button
+        android:id="@+id/btnPedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/fundoComponente"
+        android:text="@string/pedir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+
+</android.support.constraint.ConstraintLayout>
